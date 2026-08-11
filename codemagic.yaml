@@ -6,16 +6,14 @@ workflows:
 
     environment:
       xcode: latest
-      vars:
-        XCODE_PROJECT: "ios/WatchHealthTest.xcodeproj"
-        XCODE_SCHEME: "WatchHealthTest"
 
     scripts:
       - name: Build iOS app
         script: |
           xcodebuild \
-            -project "$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -configuration Release \
+            -project ios/WatchHealthTest.xcodeproj \
+            -scheme "WatchHealthTest" \
+            -configuration Debug \
             -sdk iphoneos \
+            CODE_SIGNING_ALLOWED=NO \
             build
