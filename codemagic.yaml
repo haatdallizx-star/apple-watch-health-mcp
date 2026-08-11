@@ -15,7 +15,7 @@ workflows:
             -scheme "WatchHealthTest" \
             -configuration Debug \
             -sdk iphoneos \
-            CODE_SIGNING_ALLOWED=NO
+            CODE_SIGNING_ALLOWED=NO \
             build
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
