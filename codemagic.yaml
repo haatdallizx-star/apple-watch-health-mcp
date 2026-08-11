@@ -17,3 +17,5 @@ workflows:
             -sdk iphoneos \
             CODE_SIGNING_ALLOWED=NO
             build
+    artifacts:
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
