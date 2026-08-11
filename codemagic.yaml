@@ -15,4 +15,5 @@ workflows:
             -scheme "WatchHealthTest" \
             -configuration Debug \
             -sdk iphoneos \
+            CODE_SIGNING_ALLOWED=NO
             build
